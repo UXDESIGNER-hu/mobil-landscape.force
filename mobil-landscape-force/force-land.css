@@ -1,0 +1,31 @@
+@media all and (orientation: portrait) and (max-width:1199px) { 
+    body > * {
+        display: none !important;
+    }
+    
+    body {
+        background-color: #000 !important;
+    } 
+    
+    body::after {
+        
+        content: "Pleas, rotate the display!";
+        
+        color: #fff;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 4vw;
+        display: block;
+        text-align: center;
+        height: 25vw;
+        line-height: 60vw;
+        width: 100%;
+        position: absolute;
+        margin: -20vw 0 0 0px;
+        top: 50%;
+        background-image: url("img/turn-land.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25vw;
+    }
+}
